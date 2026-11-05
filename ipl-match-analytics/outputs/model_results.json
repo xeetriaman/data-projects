@@ -1,0 +1,276 @@
+{
+  "train_matches": 946,
+  "test_matches": 288,
+  "test_seasons": "2023-2026",
+  "results": {
+    "Coin flip": {
+      "accuracy": 0.5,
+      "log_loss": 0.693,
+      "brier": 0.25,
+      "auc": 0.5
+    },
+    "Pick the toss winner": {
+      "accuracy": 0.503,
+      "log_loss": 0.697,
+      "brier": 0.252,
+      "auc": 0.502
+    },
+    "Pick the chasing team": {
+      "accuracy": 0.524,
+      "log_loss": 0.693,
+      "brier": 0.25,
+      "auc": 0.525
+    },
+    "Pick the team in better form": {
+      "accuracy": 0.507,
+      "log_loss": 0.697,
+      "brier": 0.252,
+      "auc": 0.503
+    },
+    "Logistic regression": {
+      "accuracy": 0.524,
+      "log_loss": 0.693,
+      "brier": 0.25,
+      "auc": 0.544
+    },
+    "Gradient boosting": {
+      "accuracy": 0.528,
+      "log_loss": 0.716,
+      "brier": 0.261,
+      "auc": 0.523
+    }
+  },
+  "logistic_coefficients": {
+    "a_won_toss": 0.022,
+    "a_bats_second": 0.218,
+    "form_diff": 0.026,
+    "career_diff": 0.159,
+    "a_h2h": -0.054,
+    "chase_edge_for_a": -0.046
+  },
+  "live_chase_model": {
+    "retrain_check": {
+      "test_seasons": "2025-2026",
+      "trained_to_2022": {
+        "accuracy": 0.792,
+        "log_loss": 0.432,
+        "brier": 0.142,
+        "auc": 0.917,
+        "mean_predicted": 0.422
+      },
+      "trained_to_2024_with_era_flag": {
+        "accuracy": 0.821,
+        "log_loss": 0.387,
+        "brier": 0.124,
+        "auc": 0.917,
+        "mean_predicted": 0.476
+      },
+      "actual_chase_win_rate": 0.556
+    },
+    "train_states": 16677,
+    "test_states": 5093,
+    "overall": {
+      "accuracy": 0.789,
+      "log_loss": 0.445,
+      "brier": 0.146,
+      "auc": 0.892
+    },
+    "by_stage": {
+      "After 6 overs": {
+        "states": 282,
+        "accuracy": 0.741,
+        "log_loss": 0.509,
+        "brier": 0.169,
+        "auc": 0.858
+      },
+      "After 10 overs": {
+        "states": 278,
+        "accuracy": 0.799,
+        "log_loss": 0.441,
+        "brier": 0.144,
+        "auc": 0.886
+      },
+      "After 15 overs": {
+        "states": 264,
+        "accuracy": 0.879,
+        "log_loss": 0.317,
+        "brier": 0.099,
+        "auc": 0.941
+      }
+    },
+    "calibration": [
+      {
+        "predicted": 0.033,
+        "actual": 0.064,
+        "n": 1404
+      },
+      {
+        "predicted": 0.149,
+        "actual": 0.28,
+        "n": 579
+      },
+      {
+        "predicted": 0.25,
+        "actual": 0.422,
+        "n": 445
+      },
+      {
+        "predicted": 0.351,
+        "actual": 0.524,
+        "n": 334
+      },
+      {
+        "predicted": 0.446,
+        "actual": 0.604,
+        "n": 331
+      },
+      {
+        "predicted": 0.548,
+        "actual": 0.722,
+        "n": 299
+      },
+      {
+        "predicted": 0.65,
+        "actual": 0.836,
+        "n": 299
+      },
+      {
+        "predicted": 0.753,
+        "actual": 0.821,
+        "n": 368
+      },
+      {
+        "predicted": 0.852,
+        "actual": 0.91,
+        "n": 424
+      },
+      {
+        "predicted": 0.949,
+        "actual": 0.964,
+        "n": 610
+      }
+    ],
+    "example_match_id": "1535465",
+    "example_curve": [
+      {
+        "over": 1,
+        "runs_needed": 151,
+        "balls_left": 114,
+        "wickets_left": 10,
+        "p": 0.625
+      },
+      {
+        "over": 2,
+        "runs_needed": 133,
+        "balls_left": 108,
+        "wickets_left": 10,
+        "p": 0.761
+      },
+      {
+        "over": 3,
+        "runs_needed": 120,
+        "balls_left": 102,
+        "wickets_left": 10,
+        "p": 0.83
+      },
+      {
+        "over": 4,
+        "runs_needed": 101,
+        "balls_left": 96,
+        "wickets_left": 10,
+        "p": 0.91
+      },
+      {
+        "over": 5,
+        "runs_needed": 93,
+        "balls_left": 90,
+        "wickets_left": 9,
+        "p": 0.883
+      },
+      {
+        "over": 6,
+        "runs_needed": 86,
+        "balls_left": 84,
+        "wickets_left": 8,
+        "p": 0.845
+      },
+      {
+        "over": 7,
+        "runs_needed": 75,
+        "balls_left": 78,
+        "wickets_left": 8,
+        "p": 0.888
+      },
+      {
+        "over": 8,
+        "runs_needed": 68,
+        "balls_left": 72,
+        "wickets_left": 8,
+        "p": 0.905
+      },
+      {
+        "over": 9,
+        "runs_needed": 65,
+        "balls_left": 66,
+        "wickets_left": 6,
+        "p": 0.774
+      },
+      {
+        "over": 10,
+        "runs_needed": 56,
+        "balls_left": 60,
+        "wickets_left": 6,
+        "p": 0.823
+      },
+      {
+        "over": 11,
+        "runs_needed": 47,
+        "balls_left": 54,
+        "wickets_left": 6,
+        "p": 0.865
+      },
+      {
+        "over": 12,
+        "runs_needed": 40,
+        "balls_left": 48,
+        "wickets_left": 6,
+        "p": 0.889
+      },
+      {
+        "over": 13,
+        "runs_needed": 30,
+        "balls_left": 42,
+        "wickets_left": 6,
+        "p": 0.926
+      },
+      {
+        "over": 14,
+        "runs_needed": 24,
+        "balls_left": 36,
+        "wickets_left": 5,
+        "p": 0.905
+      },
+      {
+        "over": 15,
+        "runs_needed": 17,
+        "balls_left": 30,
+        "wickets_left": 5,
+        "p": 0.929
+      },
+      {
+        "over": 16,
+        "runs_needed": 11,
+        "balls_left": 24,
+        "wickets_left": 5,
+        "p": 0.947
+      },
+      {
+        "over": 17,
+        "runs_needed": 8,
+        "balls_left": 18,
+        "wickets_left": 5,
+        "p": 0.949
+      }
+    ]
+  }
+}

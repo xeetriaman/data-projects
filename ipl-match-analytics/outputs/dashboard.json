@@ -1,0 +1,554 @@
+{
+ "summary": {
+  "matches": 1243,
+  "seasons": "2008-2026",
+  "toss_winner_win_pct": 51.4,
+  "chasing_win_pct": 54.5
+ },
+ "toss": [
+  {
+   "toss_choice": "bat",
+   "matches": 414,
+   "toss_winner_win_pct": 45.4
+  },
+  {
+   "toss_choice": "field",
+   "matches": 820,
+   "toss_winner_win_pct": 54.4
+  },
+  {
+   "toss_choice": "all",
+   "matches": 1234,
+   "toss_winner_win_pct": 51.4
+  }
+ ],
+ "seasons": [
+  {
+   "season": 2008,
+   "matches": 58,
+   "chose_to_field_pct": 55.2,
+   "chasing_win_pct": 62.1,
+   "avg_first_innings": 161.9,
+   "pct_200_plus": 12.5,
+   "highest": 240
+  },
+  {
+   "season": 2009,
+   "matches": 57,
+   "chose_to_field_pct": 38.6,
+   "chasing_win_pct": 52.6,
+   "avg_first_innings": 150.3,
+   "pct_200_plus": 1.9,
+   "highest": 211
+  },
+  {
+   "season": 2010,
+   "matches": 60,
+   "chose_to_field_pct": 35.0,
+   "chasing_win_pct": 46.7,
+   "avg_first_innings": 164.8,
+   "pct_200_plus": 8.3,
+   "highest": 246
+  },
+  {
+   "season": 2011,
+   "matches": 72,
+   "chose_to_field_pct": 66.7,
+   "chasing_win_pct": 55.6,
+   "avg_first_innings": 155.6,
+   "pct_200_plus": 5.8,
+   "highest": 232
+  },
+  {
+   "season": 2012,
+   "matches": 74,
+   "chose_to_field_pct": 50.0,
+   "chasing_win_pct": 54.1,
+   "avg_first_innings": 157.5,
+   "pct_200_plus": 5.4,
+   "highest": 222
+  },
+  {
+   "season": 2013,
+   "matches": 76,
+   "chose_to_field_pct": 40.8,
+   "chasing_win_pct": 51.3,
+   "avg_first_innings": 155.9,
+   "pct_200_plus": 5.3,
+   "highest": 263
+  },
+  {
+   "season": 2014,
+   "matches": 60,
+   "chose_to_field_pct": 68.3,
+   "chasing_win_pct": 61.7,
+   "avg_first_innings": 163.4,
+   "pct_200_plus": 8.5,
+   "highest": 231
+  },
+  {
+   "season": 2015,
+   "matches": 57,
+   "chose_to_field_pct": 56.1,
+   "chasing_win_pct": 43.9,
+   "avg_first_innings": 165.7,
+   "pct_200_plus": 10.9,
+   "highest": 235
+  },
+  {
+   "season": 2016,
+   "matches": 60,
+   "chose_to_field_pct": 81.7,
+   "chasing_win_pct": 68.3,
+   "avg_first_innings": 164.3,
+   "pct_200_plus": 7.1,
+   "highest": 248
+  },
+  {
+   "season": 2017,
+   "matches": 59,
+   "chose_to_field_pct": 81.4,
+   "chasing_win_pct": 55.9,
+   "avg_first_innings": 166.4,
+   "pct_200_plus": 13.8,
+   "highest": 230
+  },
+  {
+   "season": 2018,
+   "matches": 60,
+   "chose_to_field_pct": 83.3,
+   "chasing_win_pct": 53.3,
+   "avg_first_innings": 172.1,
+   "pct_200_plus": 19.3,
+   "highest": 245
+  },
+  {
+   "season": 2019,
+   "matches": 59,
+   "chose_to_field_pct": 83.1,
+   "chasing_win_pct": 61.0,
+   "avg_first_innings": 168.5,
+   "pct_200_plus": 13.6,
+   "highest": 232
+  },
+  {
+   "season": 2020,
+   "matches": 60,
+   "chose_to_field_pct": 55.0,
+   "chasing_win_pct": 50.0,
+   "avg_first_innings": 169.5,
+   "pct_200_plus": 15.0,
+   "highest": 228
+  },
+  {
+   "season": 2021,
+   "matches": 60,
+   "chose_to_field_pct": 73.3,
+   "chasing_win_pct": 61.7,
+   "avg_first_innings": 159.3,
+   "pct_200_plus": 10.0,
+   "highest": 235
+  },
+  {
+   "season": 2022,
+   "matches": 74,
+   "chose_to_field_pct": 79.7,
+   "chasing_win_pct": 50.0,
+   "avg_first_innings": 171.1,
+   "pct_200_plus": 17.6,
+   "highest": 222
+  },
+  {
+   "season": 2023,
+   "matches": 73,
+   "chose_to_field_pct": 71.2,
+   "chasing_win_pct": 45.2,
+   "avg_first_innings": 183.0,
+   "pct_200_plus": 32.4,
+   "highest": 257
+  },
+  {
+   "season": 2024,
+   "matches": 71,
+   "chose_to_field_pct": 73.2,
+   "chasing_win_pct": 50.7,
+   "avg_first_innings": 189.6,
+   "pct_200_plus": 36.6,
+   "highest": 287
+  },
+  {
+   "season": 2025,
+   "matches": 71,
+   "chose_to_field_pct": 83.1,
+   "chasing_win_pct": 52.1,
+   "avg_first_innings": 190.9,
+   "pct_200_plus": 45.7,
+   "highest": 286
+  },
+  {
+   "season": 2026,
+   "matches": 73,
+   "chose_to_field_pct": 83.6,
+   "chasing_win_pct": 61.6,
+   "avg_first_innings": 195.1,
+   "pct_200_plus": 51.4,
+   "highest": 264
+  }
+ ],
+ "phases": [
+  {
+   "era": "2008-2022",
+   "phase": "powerplay",
+   "run_rate": 7.66,
+   "wickets_per_over": 0.24
+  },
+  {
+   "era": "2008-2022",
+   "phase": "middle",
+   "run_rate": 7.66,
+   "wickets_per_over": 0.25
+  },
+  {
+   "era": "2008-2022",
+   "phase": "death",
+   "run_rate": 9.82,
+   "wickets_per_over": 0.51
+  },
+  {
+   "era": "2023 onwards",
+   "phase": "powerplay",
+   "run_rate": 9.47,
+   "wickets_per_over": 0.25
+  },
+  {
+   "era": "2023 onwards",
+   "phase": "middle",
+   "run_rate": 8.9,
+   "wickets_per_over": 0.28
+  },
+  {
+   "era": "2023 onwards",
+   "phase": "death",
+   "run_rate": 10.85,
+   "wickets_per_over": 0.5
+  }
+ ],
+ "venues": [
+  {
+   "venue": "Sawai Mansingh Stadium",
+   "matches": 68,
+   "chasing_win_pct": 64.7,
+   "avg_first_innings": 169.1
+  },
+  {
+   "venue": "Eden Gardens",
+   "matches": 105,
+   "chasing_win_pct": 57.1,
+   "avg_first_innings": 169.7
+  },
+  {
+   "venue": "Zayed Cricket Stadium",
+   "matches": 37,
+   "chasing_win_pct": 56.8,
+   "avg_first_innings": 158.9
+  },
+  {
+   "venue": "M Chinnaswamy Stadium",
+   "matches": 101,
+   "chasing_win_pct": 56.4,
+   "avg_first_innings": 174.8
+  },
+  {
+   "venue": "Punjab Cricket Association Stadium",
+   "matches": 61,
+   "chasing_win_pct": 55.7,
+   "avg_first_innings": 168.3
+  },
+  {
+   "venue": "Rajiv Gandhi International Stadium",
+   "matches": 89,
+   "chasing_win_pct": 55.1,
+   "avg_first_innings": 168.7
+  },
+  {
+   "venue": "Wankhede Stadium",
+   "matches": 132,
+   "chasing_win_pct": 54.5,
+   "avg_first_innings": 173.1
+  },
+  {
+   "venue": "Dr DY Patil Sports Academy",
+   "matches": 37,
+   "chasing_win_pct": 54.1,
+   "avg_first_innings": 159.6
+  },
+  {
+   "venue": "Arun Jaitley Stadium",
+   "matches": 103,
+   "chasing_win_pct": 53.4,
+   "avg_first_innings": 172.9
+  },
+  {
+   "venue": "Narendra Modi Stadium",
+   "matches": 53,
+   "chasing_win_pct": 50.9,
+   "avg_first_innings": 180.7
+  },
+  {
+   "venue": "Dubai International Cricket Stadium",
+   "matches": 46,
+   "chasing_win_pct": 50.0,
+   "avg_first_innings": 163.8
+  },
+  {
+   "venue": "Maharashtra Cricket Association Stadium",
+   "matches": 35,
+   "chasing_win_pct": 48.6,
+   "avg_first_innings": 168.3
+  },
+  {
+   "venue": "MA Chidambaram Stadium",
+   "matches": 98,
+   "chasing_win_pct": 45.9,
+   "avg_first_innings": 165.6
+  }
+ ],
+ "teams": [
+  {
+   "team": "Gujarat Titans",
+   "matches": 77,
+   "wins": 47,
+   "win_pct": 61.0
+  },
+  {
+   "team": "Chennai Super Kings",
+   "matches": 265,
+   "wins": 148,
+   "win_pct": 55.8
+  },
+  {
+   "team": "Mumbai Indians",
+   "matches": 291,
+   "wins": 157,
+   "win_pct": 54.0
+  },
+  {
+   "team": "Kolkata Knight Riders",
+   "matches": 276,
+   "wins": 142,
+   "win_pct": 51.4
+  },
+  {
+   "team": "Royal Challengers Bengaluru",
+   "matches": 283,
+   "wins": 145,
+   "win_pct": 51.2
+  },
+  {
+   "team": "Rajasthan Royals",
+   "matches": 249,
+   "wins": 125,
+   "win_pct": 50.2
+  },
+  {
+   "team": "Sunrisers Hyderabad",
+   "matches": 210,
+   "wins": 103,
+   "win_pct": 49.0
+  },
+  {
+   "team": "Lucknow Super Giants",
+   "matches": 71,
+   "wins": 34,
+   "win_pct": 47.9
+  },
+  {
+   "team": "Punjab Kings",
+   "matches": 275,
+   "wins": 129,
+   "win_pct": 46.9
+  },
+  {
+   "team": "Delhi Capitals",
+   "matches": 277,
+   "wins": 129,
+   "win_pct": 46.6
+  },
+  {
+   "team": "Deccan Chargers",
+   "matches": 75,
+   "wins": 29,
+   "win_pct": 38.7
+  }
+ ],
+ "prematch": {
+  "Coin flip": {
+   "accuracy": 0.5,
+   "log_loss": 0.693,
+   "brier": 0.25,
+   "auc": 0.5
+  },
+  "Pick the toss winner": {
+   "accuracy": 0.503,
+   "log_loss": 0.697,
+   "brier": 0.252,
+   "auc": 0.502
+  },
+  "Pick the chasing team": {
+   "accuracy": 0.524,
+   "log_loss": 0.693,
+   "brier": 0.25,
+   "auc": 0.525
+  },
+  "Pick the team in better form": {
+   "accuracy": 0.507,
+   "log_loss": 0.697,
+   "brier": 0.252,
+   "auc": 0.503
+  },
+  "Logistic regression": {
+   "accuracy": 0.524,
+   "log_loss": 0.693,
+   "brier": 0.25,
+   "auc": 0.544
+  },
+  "Gradient boosting": {
+   "accuracy": 0.528,
+   "log_loss": 0.716,
+   "brier": 0.261,
+   "auc": 0.523
+  }
+ },
+ "live": {
+  "by_stage": {
+   "After 6 overs": {
+    "states": 282,
+    "accuracy": 0.741,
+    "log_loss": 0.509,
+    "brier": 0.169,
+    "auc": 0.858
+   },
+   "After 10 overs": {
+    "states": 278,
+    "accuracy": 0.799,
+    "log_loss": 0.441,
+    "brier": 0.144,
+    "auc": 0.886
+   },
+   "After 15 overs": {
+    "states": 264,
+    "accuracy": 0.879,
+    "log_loss": 0.317,
+    "brier": 0.099,
+    "auc": 0.941
+   }
+  },
+  "retrain_check": {
+   "test_seasons": "2025-2026",
+   "trained_to_2022": {
+    "accuracy": 0.792,
+    "log_loss": 0.432,
+    "brier": 0.142,
+    "auc": 0.917,
+    "mean_predicted": 0.422
+   },
+   "trained_to_2024_with_era_flag": {
+    "accuracy": 0.821,
+    "log_loss": 0.387,
+    "brier": 0.124,
+    "auc": 0.917,
+    "mean_predicted": 0.476
+   },
+   "actual_chase_win_rate": 0.556
+  },
+  "calibration": [
+   {
+    "predicted": 0.033,
+    "actual": 0.064,
+    "n": 1404
+   },
+   {
+    "predicted": 0.149,
+    "actual": 0.28,
+    "n": 579
+   },
+   {
+    "predicted": 0.25,
+    "actual": 0.422,
+    "n": 445
+   },
+   {
+    "predicted": 0.351,
+    "actual": 0.524,
+    "n": 334
+   },
+   {
+    "predicted": 0.446,
+    "actual": 0.604,
+    "n": 331
+   },
+   {
+    "predicted": 0.548,
+    "actual": 0.722,
+    "n": 299
+   },
+   {
+    "predicted": 0.65,
+    "actual": 0.836,
+    "n": 299
+   },
+   {
+    "predicted": 0.753,
+    "actual": 0.821,
+    "n": 368
+   },
+   {
+    "predicted": 0.852,
+    "actual": 0.91,
+    "n": 424
+   },
+   {
+    "predicted": 0.949,
+    "actual": 0.964,
+    "n": 610
+   }
+  ]
+ },
+ "live_model": {
+  "features": [
+   "runs_needed",
+   "balls_left",
+   "wickets_left",
+   "required_rate",
+   "rr_x_wkts",
+   "impact_era"
+  ],
+  "mean": [
+   94.204593,
+   61.519476,
+   7.420808,
+   12.608673,
+   51.660435,
+   0.233946
+  ],
+  "std": [
+   50.804956,
+   32.653858,
+   2.178738,
+   24.005639,
+   199.407522,
+   0.423338
+  ],
+  "coef": [
+   -1.452537,
+   0.204715,
+   1.053227,
+   -6.3496,
+   -1.591725,
+   0.295959
+  ],
+  "intercept": -0.889288,
+  "trained_on_states": 21770
+ },
+ "test_seasons": "2023-2026"
+}
