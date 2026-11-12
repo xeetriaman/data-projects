@@ -1,0 +1,25 @@
+{
+  "train_sales": 26822,
+  "test_sales": 11088,
+  "split_date": "2018-07-01",
+  "models": {
+    "Baseline: suburb median": {
+      "median_abs_pct_error": 14.7,
+      "within_10_pct": 36.2,
+      "mae_dollars": 307968,
+      "median_predicted_to_actual": 1.064
+    },
+    "Linear regression": {
+      "median_abs_pct_error": 13.2,
+      "within_10_pct": 39.6,
+      "mae_dollars": 286222,
+      "median_predicted_to_actual": 1.014
+    },
+    "Gradient boosting": {
+      "median_abs_pct_error": 13.1,
+      "within_10_pct": 40.0,
+      "mae_dollars": 277665,
+      "median_predicted_to_actual": 1.04
+    }
+  }
+}

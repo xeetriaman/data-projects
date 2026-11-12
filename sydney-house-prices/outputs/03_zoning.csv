@@ -1,0 +1,10 @@
+zoning,sales,avg_area_sqm,avg_price,avg_price_per_sqm
+Mixed Use,129,401.0,2499091.0,9119.0
+General Residential,2792,325.0,1399457.0,6263.0
+Medium Density Residential,3652,514.0,1446758.0,3564.0
+High Density Residential,524,636.0,2037346.0,3500.0
+Low Density Residential,26457,623.0,1381553.0,2631.0
+Environmental Management,323,968.0,1924277.0,2359.0
+Unknown,1071,558.0,896486.0,2118.0
+Environmental Living,2352,1012.0,1506625.0,1770.0
+Large Lot Residential,144,3529.0,1579185.0,500.0

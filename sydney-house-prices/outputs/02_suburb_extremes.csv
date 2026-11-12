@@ -1,0 +1,21 @@
+band,suburb,sales,avg_price_per_sqm,avg_price
+Top 10,Millers Point,51,41779.0,5271529.0
+Top 10,Paddington,157,19101.0,2987748.0
+Top 10,Surry Hills,37,17562.0,2327905.0
+Top 10,Woollahra,73,15217.0,3979882.0
+Top 10,Bondi Junction,83,13771.0,2540117.0
+Top 10,Birchgrove,34,13468.0,2915426.0
+Top 10,Bronte,58,13000.0,4273223.0
+Top 10,Redfern,54,12185.0,1800749.0
+Top 10,St Leonards,55,11933.0,5516358.0
+Top 10,Glebe,53,11744.0,2073632.0
+Bottom 10,Silverdale,43,604.0,895151.0
+Bottom 10,Faulconbridge,61,615.0,723684.0
+Bottom 10,Bargo,46,618.0,723554.0
+Bottom 10,Thirlmere,45,627.0,671046.0
+Bottom 10,Woodford,34,640.0,675882.0
+Bottom 10,Lawson,48,685.0,572155.0
+Bottom 10,Hazelbrook,74,717.0,648562.0
+Bottom 10,Picton,89,731.0,806869.0
+Bottom 10,Buxton,36,736.0,582676.0
+Bottom 10,Katoomba,153,762.0,640692.0
