@@ -1,0 +1,50 @@
+industry,fin_year,turnover_bn,growth_pct
+"Cafes, restaurants and takeaway",2019,16.18,
+"Cafes, restaurants and takeaway",2020,14.56,-10.0
+"Cafes, restaurants and takeaway",2021,14.97,2.9
+"Cafes, restaurants and takeaway",2022,14.94,-0.3
+"Cafes, restaurants and takeaway",2023,19.96,33.7
+"Cafes, restaurants and takeaway",2024,19.74,-1.1
+"Cafes, restaurants and takeaway",2025,20.36,3.1
+"Clothing, footwear and accessories",2019,9.4,
+"Clothing, footwear and accessories",2020,8.82,-6.1
+"Clothing, footwear and accessories",2021,11.09,25.7
+"Clothing, footwear and accessories",2022,11.09,0.0
+"Clothing, footwear and accessories",2023,13.55,22.1
+"Clothing, footwear and accessories",2024,13.65,0.7
+"Clothing, footwear and accessories",2025,13.97,2.4
+Department stores,2019,6.1,
+Department stores,2020,6.12,0.2
+Department stores,2021,6.6,8.0
+Department stores,2022,5.84,-11.6
+Department stores,2023,7.06,20.9
+Department stores,2024,7.03,-0.3
+Department stores,2025,7.08,0.7
+Food retailing,2019,41.11,
+Food retailing,2020,43.31,5.3
+Food retailing,2021,45.61,5.3
+Food retailing,2022,47.29,3.7
+Food retailing,2023,50.2,6.2
+Food retailing,2024,52.04,3.7
+Food retailing,2025,53.45,2.7
+Household goods,2019,17.4,
+Household goods,2020,18.24,4.8
+Household goods,2021,21.52,18.0
+Household goods,2022,21.81,1.3
+Household goods,2023,22.36,2.5
+Household goods,2024,21.37,-4.4
+Household goods,2025,21.6,1.1
+Other retailing,2019,14.04,
+Other retailing,2020,14.56,3.7
+Other retailing,2021,16.48,13.2
+Other retailing,2022,18.85,14.4
+Other retailing,2023,19.85,5.3
+Other retailing,2024,20.15,1.5
+Other retailing,2025,20.58,2.1
+Total retail,2019,104.23,
+Total retail,2020,105.6,1.3
+Total retail,2021,116.27,10.1
+Total retail,2022,119.81,3.0
+Total retail,2023,132.97,11.0
+Total retail,2024,133.98,0.8
+Total retail,2025,137.04,2.3
