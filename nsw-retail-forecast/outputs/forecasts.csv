@@ -1,0 +1,85 @@
+month,industry,actual,holt_winters,seasonal_naive
+2024-07,"Cafes, restaurants and takeaway",1629.4,1608.0,1630.5
+2024-08,"Cafes, restaurants and takeaway",1671.8,1611.1,1672.6
+2024-09,"Cafes, restaurants and takeaway",1690.2,1640.4,1676.9
+2024-10,"Cafes, restaurants and takeaway",1768.7,1699.0,1718.0
+2024-11,"Cafes, restaurants and takeaway",1795.2,1706.2,1694.9
+2024-12,"Cafes, restaurants and takeaway",1904.4,1867.7,1757.2
+2025-01,"Cafes, restaurants and takeaway",1670.4,1655.8,1571.6
+2025-02,"Cafes, restaurants and takeaway",1532.6,1529.9,1555.2
+2025-03,"Cafes, restaurants and takeaway",1678.0,1634.1,1618.8
+2025-04,"Cafes, restaurants and takeaway",1647.8,1574.9,1622.2
+2025-05,"Cafes, restaurants and takeaway",1714.2,1607.2,1665.9
+2025-06,"Cafes, restaurants and takeaway",1653.4,1556.6,1556.6
+2024-07,"Clothing, footwear and accessories",1049.5,1013.8,1035.3
+2024-08,"Clothing, footwear and accessories",1078.6,985.7,1055.6
+2024-09,"Clothing, footwear and accessories",1079.4,1035.6,1097.5
+2024-10,"Clothing, footwear and accessories",1104.9,1097.9,1104.9
+2024-11,"Clothing, footwear and accessories",1359.0,1253.8,1307.9
+2024-12,"Clothing, footwear and accessories",1689.0,1755.6,1647.5
+2025-01,"Clothing, footwear and accessories",1081.5,1074.6,1035.0
+2025-02,"Clothing, footwear and accessories",955.8,916.7,969.8
+2025-03,"Clothing, footwear and accessories",1098.0,1032.5,1022.9
+2025-04,"Clothing, footwear and accessories",1077.1,1052.2,1075.7
+2025-05,"Clothing, footwear and accessories",1219.0,1155.0,1179.6
+2025-06,"Clothing, footwear and accessories",1180.4,1114.4,1114.4
+2024-07,Department stores,524.7,520.8,522.3
+2024-08,Department stores,511.1,470.0,498.0
+2024-09,Department stores,525.8,520.2,561.5
+2024-10,Department stores,566.1,596.0,563.9
+2024-11,Department stores,735.5,698.6,734.1
+2024-12,Department stores,999.5,1015.9,1000.3
+2025-01,Department stores,523.4,530.9,516.2
+2025-02,Department stores,437.0,424.1,434.1
+2025-03,Department stores,534.0,520.4,524.9
+2025-04,Department stores,534.4,540.4,532.5
+2025-05,Department stores,582.8,568.0,570.3
+2025-06,Department stores,607.0,576.3,576.2
+2024-07,Food retailing,4241.5,4309.8,4156.6
+2024-08,Food retailing,4433.8,4394.9,4226.5
+2024-09,Food retailing,4290.9,4326.5,4236.9
+2024-10,Food retailing,4468.3,4526.0,4355.2
+2024-11,Food retailing,4527.0,4487.5,4358.9
+2024-12,Food retailing,5245.0,5258.2,5106.5
+2025-01,Food retailing,4418.6,4510.4,4313.6
+2025-02,Food retailing,4118.5,4122.3,4116.9
+2025-03,Food retailing,4597.1,4580.9,4486.3
+2025-04,Food retailing,4393.3,4331.4,4209.2
+2025-05,Food retailing,4439.8,4381.1,4301.1
+2025-06,Food retailing,4272.9,4219.5,4171.2
+2024-07,Household goods,1686.1,1654.2,1675.2
+2024-08,Household goods,1699.6,1668.2,1702.8
+2024-09,Household goods,1749.9,1743.9,1784.7
+2024-10,Household goods,1885.6,1850.7,1844.9
+2024-11,Household goods,2128.9,2054.9,2132.6
+2024-12,Household goods,2334.4,2151.4,2206.5
+2025-01,Household goods,1717.8,1695.6,1731.6
+2025-02,Household goods,1571.4,1571.8,1609.8
+2025-03,Household goods,1674.3,1667.2,1625.0
+2025-04,Household goods,1583.2,1590.2,1600.7
+2025-05,Household goods,1706.4,1699.1,1692.0
+2025-06,Household goods,1862.0,1757.9,1760.9
+2024-07,Other retailing,1641.6,1665.6,1575.5
+2024-08,Other retailing,1692.8,1681.5,1602.4
+2024-09,Other retailing,1656.4,1676.9,1640.3
+2024-10,Other retailing,1773.4,1751.5,1683.2
+2024-11,Other retailing,1957.7,2027.9,1926.6
+2024-12,Other retailing,2124.8,2247.9,2066.4
+2025-01,Other retailing,1655.9,1642.1,1619.7
+2025-02,Other retailing,1522.9,1554.5,1564.0
+2025-03,Other retailing,1640.9,1695.0,1595.6
+2025-04,Other retailing,1586.6,1600.8,1599.6
+2025-05,Other retailing,1666.9,1699.0,1681.7
+2025-06,Other retailing,1661.9,1649.8,1598.1
+2024-07,Total retail,10772.9,10767.9,10595.3
+2024-08,Total retail,11087.8,10796.2,10757.9
+2024-09,Total retail,10992.6,10975.0,10997.8
+2024-10,Total retail,11567.0,11611.5,11270.2
+2024-11,Total retail,12503.2,12304.3,12155.0
+2024-12,Total retail,14297.0,14311.7,13784.5
+2025-01,Total retail,11067.6,11176.6,10787.7
+2025-02,Total retail,10138.2,10246.4,10249.7
+2025-03,Total retail,11222.2,11203.9,10873.5
+2025-04,Total retail,10822.4,10720.6,10639.8
+2025-05,Total retail,11329.1,11197.7,11090.6
+2025-06,Total retail,11237.6,10983.3,10777.4

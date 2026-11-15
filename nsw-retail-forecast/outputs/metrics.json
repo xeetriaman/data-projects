@@ -1,0 +1,57 @@
+{
+  "train_from": "2010-01",
+  "test_years": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+  ],
+  "average_over_groups": {
+    "holt_winters": 3.73,
+    "seasonal_naive": 6.41
+  },
+  "groups_where_holt_winters_wins": 5,
+  "by_industry": {
+    "Cafes, restaurants and takeaway": {
+      "holt_winters": 3.71,
+      "seasonal_naive": 10.43
+    },
+    "Clothing, footwear and accessories": {
+      "holt_winters": 4.07,
+      "seasonal_naive": 8.06
+    },
+    "Department stores": {
+      "holt_winters": 4.74,
+      "seasonal_naive": 7.85
+    },
+    "Food retailing": {
+      "holt_winters": 2.14,
+      "seasonal_naive": 3.99
+    },
+    "Household goods": {
+      "holt_winters": 2.78,
+      "seasonal_naive": 4.63
+    },
+    "Other retailing": {
+      "holt_winters": 4.96,
+      "seasonal_naive": 3.47
+    },
+    "Total retail": {
+      "holt_winters": 1.41,
+      "seasonal_naive": 4.49
+    }
+  },
+  "by_test_year": {
+    "FY2023": {
+      "holt_winters": 5.62,
+      "seasonal_naive": 13.56
+    },
+    "FY2024": {
+      "holt_winters": 2.94,
+      "seasonal_naive": 3.13
+    },
+    "FY2025": {
+      "holt_winters": 2.64,
+      "seasonal_naive": 2.52
+    }
+  }
+}
