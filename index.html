@@ -219,12 +219,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 @media (max-width: 1239px) {
   .rail.right { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 30px; }
 }
+.rail > * { flex: none; }
 .rcard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; }
 .rcard h3 { font-size: 14px; display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
 .rcard h3 svg { width: 16px; height: 16px; color: var(--muted); }
 .crest { padding: 18px 16px; background: var(--ink); color: #fff; border-color: var(--ink); position: relative; overflow: hidden; }
-.crest svg.mark { width: 54px; height: 62px; }
-.crest b { display: block; font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-top: 10px; line-height: 1.2; }
+.crest svg.mark { width: 48px; height: 56px; display: block; }
+.crest b { display: block; font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-top: 12px; line-height: 1.2; position: relative; }
+.crest span { position: relative; display: block; margin-top: 4px; }
 .crest span { font-size: 12px; opacity: .7; }
 .crest .grid-bg { position: absolute; right: -14px; top: -14px; width: 104px; height: 104px; opacity: .12; }
 .navlist { display: flex; flex-direction: column; gap: 2px; }
@@ -359,7 +361,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 
   <div class="layout">
   <aside class="rail left" aria-label="Course overview">
-    <div class="rcard crest"><svg class="grid-bg" viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="50" cy="10" r="3"/><circle cx="70" cy="10" r="3"/><circle cx="90" cy="10" r="3"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="50" cy="30" r="3"/><circle cx="70" cy="30" r="3"/><circle cx="90" cy="30" r="3"/><circle cx="10" cy="50" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="50" cy="50" r="3"/><circle cx="70" cy="50" r="3"/><circle cx="90" cy="50" r="3"/><circle cx="10" cy="70" r="3"/><circle cx="30" cy="70" r="3"/><circle cx="50" cy="70" r="3"/><circle cx="70" cy="70" r="3"/><circle cx="90" cy="70" r="3"/><circle cx="10" cy="90" r="3"/><circle cx="30" cy="90" r="3"/><circle cx="50" cy="90" r="3"/><circle cx="70" cy="90" r="3"/><circle cx="90" cy="90" r="3"/></g></svg><svg class="mark" viewBox="0 0 54 62" aria-hidden="true"><path d="M27 2l23 8v20c0 15-10 26-23 30C14 56 4 45 4 30V10z" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M15 40V22l6 9 6-9v18M33 22h4.5a7 7 0 010 14H33z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><circle cx="27" cy="48" r="2" fill="#fff"/></svg><b>Master of Data Science</b><span>Aman Chhetri · 2026 to 2028</span></div>
+    <div class="rcard crest"><svg class="grid-bg" viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="50" cy="10" r="3"/><circle cx="70" cy="10" r="3"/><circle cx="90" cy="10" r="3"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="50" cy="30" r="3"/><circle cx="70" cy="30" r="3"/><circle cx="90" cy="30" r="3"/><circle cx="10" cy="50" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="50" cy="50" r="3"/><circle cx="70" cy="50" r="3"/><circle cx="90" cy="50" r="3"/><circle cx="10" cy="70" r="3"/><circle cx="30" cy="70" r="3"/><circle cx="50" cy="70" r="3"/><circle cx="70" cy="70" r="3"/><circle cx="90" cy="70" r="3"/><circle cx="10" cy="90" r="3"/><circle cx="30" cy="90" r="3"/><circle cx="50" cy="90" r="3"/><circle cx="70" cy="90" r="3"/><circle cx="90" cy="90" r="3"/></g></svg><svg class="mark" viewBox="0 0 54 62" aria-hidden="true"><path d="M27 2.5l22.5 7.8v19.5c0 14.6-9.7 25.4-22.5 29.4C14.2 55.2 4.5 44.4 4.5 29.8V10.3z" fill="rgba(255,255,255,.08)" stroke="#fff" stroke-width="2"/><rect x="15" y="34" width="5" height="10" rx="1.5" fill="#fff" opacity=".55"/><rect x="24.5" y="27" width="5" height="17" rx="1.5" fill="#fff" opacity=".8"/><rect x="34" y="20" width="5" height="24" rx="1.5" fill="#fff"/><path d="M15 27l9.5-7 9.5-5" fill="none" stroke="#7d8cff" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="15" r="2.6" fill="#7d8cff"/></svg><b>Master of Data Science</b><span>Aman Chhetri · 2026 to 2028</span></div>
     <div class="rcard"><h3><svg class="ic" data-ic="calendar"></svg>Sessions</h3><div class="navlist" id="railNav"></div></div>
     <div class="rcard"><h3><svg class="ic" data-ic="medal"></svg>Grade bands</h3>
       <div class="legend">
