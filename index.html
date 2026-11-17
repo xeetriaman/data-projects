@@ -267,6 +267,69 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 .tr .tv.real { background: var(--gb); color: var(--g); }
 .task .tabout { font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
 
+/* Insights */
+.insights { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; margin-top: 16px; align-items: start; }
+.ins { padding: 18px; }
+.ins h3 { font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.ins h3 svg { width: 16px; height: 16px; color: var(--muted); }
+.ins .sub { font-size: 12px; color: var(--muted); margin: 2px 0 12px; }
+#journeyChart { width: 100%; height: auto; display: block; }
+#journeyChart text { font-family: var(--font-body); font-size: 11px; fill: var(--muted); }
+#journeyChart .val { font-family: var(--font-display); font-size: 12px; font-weight: 600; fill: var(--ink); }
+.clegend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--ink-2); margin-top: 8px; }
+.clegend span { display: inline-flex; align-items: center; gap: 6px; }
+.clegend i { width: 14px; height: 3px; border-radius: 2px; background: var(--ink); }
+.clegend i.dash { background: repeating-linear-gradient(90deg, var(--ink) 0 4px, transparent 4px 7px); }
+.clegend i.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+.clegend i.tgt { background: repeating-linear-gradient(90deg, var(--hd) 0 3px, transparent 3px 6px); }
+.hlist { display: flex; flex-direction: column; gap: 8px; }
+.hrow { display: grid; grid-template-columns: 72px 1fr 64px; gap: 10px; align-items: center; font-size: 12px; }
+.hrow b { font-weight: 600; color: var(--ink-2); }
+.hrow .ht { height: 8px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+.hrow .ht i { display: block; height: 100%; border-radius: 999px; }
+.hrow small { color: var(--muted); text-align: right; }
+.lv1 { --h: #8fd3b8; } .lv2 { --h: #5fb8d4; } .lv3 { --h: #e3b54f; } .lv4 { --h: #ec8a4b; } .lv5 { --h: #e0544f; }
+.hrow .ht i { background: var(--h); }
+
+/* Hardness meter on tiles */
+.hard { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-2); }
+.hard .bars5 { display: inline-flex; gap: 3px; }
+.hard .bars5 i { width: 14px; height: 6px; border-radius: 2px; background: var(--soft); }
+.hard .bars5 i.on { background: var(--h); }
+.hard b { font-weight: 600; }
+.hard small { color: var(--muted); }
+
+/* Deadline map (timetable) */
+.ttwrap { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; margin-bottom: 12px; }
+.tthead { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; }
+.tthead b { font-family: var(--font-display); font-size: 14px; font-weight: 600; display: inline-flex; gap: 8px; align-items: center; }
+.tthead b svg { width: 15px; height: 15px; color: var(--muted); }
+.tthead small { color: var(--muted); font-size: 11.5px; }
+.ttscroll { overflow-x: auto; }
+.tt { display: grid; grid-template-columns: 82px repeat(15, minmax(30px, 1fr)); min-width: 600px; font-size: 11px; }
+.tt .c { height: 34px; display: grid; place-items: center; border-left: 1px solid var(--line); position: relative; }
+.tt .h { height: 22px; color: var(--muted); font-weight: 600; border-left: 1px solid transparent; }
+.tt .h.now { color: var(--accent); }
+.tt .rl { justify-items: start; font-weight: 600; color: var(--ink-2); border-left: 0; }
+.tt .brk { background: repeating-linear-gradient(-45deg, var(--soft) 0 5px, transparent 5px 10px); }
+.tt .ex { background: var(--soft); }
+.tt .nowcol { box-shadow: inset 0 0 0 1.5px var(--accent-soft); background: color-mix(in srgb, var(--accent-soft) 60%, transparent); }
+.mk { border-radius: 50%; background: var(--g); color: #fff; display: grid; place-items: center; font-size: 9px; font-weight: 700; }
+.mk.plan { background: var(--surface); color: var(--g); border: 2px solid var(--g); }
+.mk.blank { background: var(--soft); color: var(--muted); border: 0; }
+
+/* Deadlines list */
+.dl { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; }
+.dl .date { text-align: center; border: 1px solid var(--line); border-radius: 10px; padding: 4px 0; line-height: 1.1; }
+.dl .date b { display: block; font-family: var(--font-display); font-size: 16px; font-weight: 600; }
+.dl .date span { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.dl b.t { display: block; font-size: 12.5px; font-weight: 600; line-height: 1.3; }
+.dl small { color: var(--muted); font-size: 11.5px; }
+.cd { font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px; background: var(--soft); color: var(--ink-2); white-space: nowrap; }
+.cd.soon { background: var(--p-bg); color: var(--p); }
+.cd.late { background: var(--f-bg); color: var(--f); }
+@media (max-width: 760px) { .insights { grid-template-columns: 1fr; } }
+
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; }
   .side { grid-template-rows: auto; }
@@ -363,13 +426,27 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
   </div>
   <div class="toast" id="toast" role="status"></div>
 
+  <section class="insights">
+    <div class="panel ins">
+      <h3><svg class="ic" data-ic="chart"></svg>WAM journey</h3>
+      <div class="sub">Each session's WAM, your running course WAM, and your target.</div>
+      <svg id="journeyChart" viewBox="0 0 520 290" role="img" aria-label="WAM by session chart"></svg>
+      <div class="clegend"><span><i class="dot"></i>Session WAM</span><span><i></i>Course WAM with results</span><span><i class="dash"></i>Projected</span><span><i class="tgt"></i>Target</span></div>
+    </div>
+    <div class="panel ins">
+      <h3><svg class="ic" data-ic="gauge"></svg>Hardness ranking</h3>
+      <div class="sub">Estimated from the 2026 guides: supervised share, hours, the biggest single task and group work.</div>
+      <div class="hlist" id="hardList"></div>
+    </div>
+  </section>
+
   <nav class="stepper" id="stepper" aria-label="Sessions"></nav>
   <div id="timeline"></div>
 
   <p class="foot">Assessment names, weights and timing come from Macquarie's 2026 unit guides and can change each session, so check each guide when you enrol. Striped segments are planned marks; solid segments are real marks. WAM is the credit-point weighted average of unit marks: HD 85+, D 75 to 84, Cr 65 to 74, P 50 to 64, F below 50.</p>
   </main>
   <aside class="rail right" aria-label="Coming up and workload">
-    <div class="rcard"><h3><svg class="ic" data-ic="flag"></svg>Coming up</h3><div class="uplist" id="upcoming"></div></div>
+    <div class="rcard"><h3><svg class="ic" data-ic="flag"></svg>Deadlines</h3><div class="uplist" id="upcoming"></div></div>
     <div class="rcard"><h3><svg class="ic" data-ic="chart"></svg>Projected grade mix</h3>
       <div class="donutwrap"><svg viewBox="0 0 42 42" id="donut" aria-hidden="true"></svg><div class="donut-legend" id="donutLegend"></div></div></div>
     <div class="rcard"><h3><svg class="ic" data-ic="clock"></svg>Assessment hours by session</h3><div class="bars" id="workload"></div>
@@ -435,11 +512,12 @@ function icon(name) { return '<svg class="ic" viewBox="0 0 24 24" aria-hidden="t
 // ===== Course data (from Macquarie 2026 unit guides) =====
 // t = task type icon, w = weight, when = timing, tags = extra labels.
 // got = your real mark (out of w). final = official unit result.
+// start = Monday of week 1; breakAfter = teaching week before the 2-week recess; est = dates are estimates.
 var SESSIONS = [
-  { id: "S2-2026", name: "Session 2, 2026", when: "Jul to Nov 2026 · now", term: "S2" },
-  { id: "S1-2027", name: "Session 1, 2027", when: "Feb to Jun 2027", term: "S1" },
-  { id: "S2-2027", name: "Session 2, 2027", when: "Jul to Nov 2027", term: "S2" },
-  { id: "S1-2028", name: "Session 1, 2028", when: "Feb to Jun 2028 · finish line", term: "S1" }
+  { id: "S2-2026", name: "Session 2, 2026", when: "Jul to Nov 2026 · now", term: "S2", start: "2026-07-27", breakAfter: 8 },
+  { id: "S1-2027", name: "Session 1, 2027", when: "Feb to Jun 2027", term: "S1", start: "2027-02-22", breakAfter: 6 },
+  { id: "S2-2027", name: "Session 2, 2027", when: "Jul to Nov 2027", term: "S2", start: "2027-07-26", breakAfter: 8 },
+  { id: "S1-2028", name: "Session 1, 2028", when: "Feb to Jun 2028 · finish line", term: "S1", start: "2028-02-21", breakAfter: 6, est: true }
 ];
 var UNITS = [
   // ---- Session 2, 2026 (now) ----
@@ -671,6 +749,58 @@ function connectAccount() {
 }
 
 
+
+// ===== Calendar, hardness =====
+var EXACT = { "11 Sep 2026": "2026-09-11", "23 Oct 2026": "2026-10-23", "2 Sep 2026": "2026-09-02", "1 Nov 2026": "2026-11-01", "4 Sep 2026": "2026-09-04" };
+var VAGUE = { "Early session": 4, "Mid session": 7, "Mid to late session": 9, "Late session": 11 };
+var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }
+function weekOf(t) {
+  if (EXACT[t.when]) {
+    var s0 = sessionOf("S2-2026"), d = new Date(EXACT[t.when] + "T00:00:00");
+    for (var w = 13; w >= 1; w--) if (d >= mondayOf(s0, w)) return w;
+    return 1;
+  }
+  var m = /Week (\d+)/.exec(t.when);
+  if (m) return Number(m[1]);
+  if (/Exam period/.test(t.when)) return 14;
+  return VAGUE[t.when] || 10;
+}
+function mondayOf(s, wk) {
+  var d = new Date(s.start + "T00:00:00");
+  d.setDate(d.getDate() + 7 * (wk - 1) + (wk > s.breakAfter ? 14 : 0));
+  return d;
+}
+function dueOf(s, t) {
+  if (EXACT[t.when] && s.id === "S2-2026") return { d: new Date(EXACT[t.when] + "T00:00:00"), exact: true };
+  var wk = weekOf(t);
+  if (wk >= 14) return { d: mondayOf(s, 14), exam: true };
+  var d = mondayOf(s, wk); d.setDate(d.getDate() + 4);
+  return { d: d };
+}
+function fmt(d) { return d.getDate() + " " + MON[d.getMonth()] + " " + d.getFullYear(); }
+function daysTo(d) { return Math.round((d - today()) / 86400000); }
+function currentWeek(s) {
+  var t = today();
+  for (var w = 14; w >= 1; w--) if (t >= mondayOf(s, w)) return (w === 14 && t > new Date(mondayOf(s, 14).getTime() + 20 * 86400000)) ? null : w;
+  return null;
+}
+function hardness(u) {
+  var sup = 0, h = 0, max = 0, grp = false;
+  u.tasks.forEach(function (t) {
+    if (t.ai === "Observed" || t.t === "exam") sup += t.w;
+    h += t.hrs || 0; max = Math.max(max, t.w);
+    if (t.tags && t.tags.indexOf("Group") > -1) grp = true;
+  });
+  var perTen = h / u.cp * 10;
+  var score = .4 * sup + .3 * Math.min(100, perTen) + .2 * Math.min(100, max / .6) + (grp ? 10 : 0) + (u.cp > 10 ? 15 : 0);
+  var lv = score < 35 ? 1 : score < 48 ? 2 : score < 60 ? 3 : score < 70 ? 4 : 5;
+  var why = [sup + "% supervised", "~" + h + " h", "biggest task " + max + "%"];
+  if (grp) why.push("group work");
+  if (u.cp > 10) why.push("double credit");
+  return { score: Math.round(score), lv: lv, label: ["", "Light", "Steady", "Moderate", "Demanding", "Tough"][lv], why: why.join(" · ") };
+}
+
 // ===== Rendering =====
 function el(tag, cls, html) { var n = document.createElement(tag); if (cls) n.className = cls; if (html != null) n.innerHTML = html; return n; }
 function txt(tag, cls, value) { var n = document.createElement(tag); if (cls) n.className = cls; n.textContent = value; return n; }
@@ -730,6 +860,16 @@ function buildTimeline() {
     sec.appendChild(head);
     s.warnEl = el("div", "warn");
     sec.appendChild(s.warnEl);
+    var tw = el("div", "ttwrap");
+    var th = el("div", "tthead");
+    th.appendChild(el("b", null, icon("calendar") + "Deadline map"));
+    th.appendChild(txt("small", null, (s.est ? "Estimated dates · " : "") + "Filled = real mark · ring = planned · size = weight"));
+    tw.appendChild(th);
+    var sc = el("div", "ttscroll");
+    s.ttEl = el("div", "tt");
+    sc.appendChild(s.ttEl);
+    tw.appendChild(sc);
+    sec.appendChild(tw);
     var grid = el("div", "grid");
     var units = unitsIn(s.id);
     if (!units.length) grid.appendChild(txt("div", "empty", "No units planned here. Move one in from another session."));
@@ -770,6 +910,16 @@ function buildUnit(u) {
     return s;
   });
   head.appendChild(bar);
+  var hd = hardness(u);
+  var hm = el("div", "hard lv" + hd.lv);
+  var b5 = el("span", "bars5");
+  for (var z = 1; z <= 5; z++) b5.appendChild(el("i", z <= hd.lv ? "on" : ""));
+  hm.appendChild(txt("span", null, "Hardness"));
+  hm.appendChild(b5);
+  hm.appendChild(txt("b", null, hd.label));
+  hm.appendChild(txt("small", null, hd.why));
+  hm.title = "Estimated hardness " + hd.score + "/100";
+  head.appendChild(hm);
 
   var rows = el("div", "trows");
   u.rows = u.tasks.map(function (t) {
@@ -1041,7 +1191,8 @@ function update() {
   var nx = document.getElementById("next");
   if (nxt) {
     var nn = unitNeed(nxt.u, target);
-    nx.textContent = nxt.u.id + " " + nxt.t.name.toLowerCase() + ", " + nxt.t.when + ". " +
+    var nd = dueOf(sessionOf(state.place[nxt.u.id]), nxt.t);
+    nx.textContent = nxt.u.id + " " + nxt.t.name.toLowerCase() + ", " + (nd.exam ? "exam period from " + fmt(nd.d) : nxt.t.when) + ". " +
       (nn.pct != null && nn.pct > 0 && nn.pct <= 100 ? "Aim for " + Math.ceil(nxt.t.w * Math.ceil(nn.pct) / 100 * 2) / 2 + " / " + nxt.t.w + " to keep this unit on " + target + "." : "Worth " + nxt.t.w + "% of the unit.");
   } else nx.textContent = "Nothing left to plan.";
 
@@ -1054,6 +1205,93 @@ function update() {
     b.setAttribute("aria-pressed", String(Number(b.dataset.target) === target));
   });
   renderRight();
+  SESSIONS.forEach(renderTT);
+  renderCharts();
+}
+
+function renderTT(s) {
+  var tt = s.ttEl;
+  tt.innerHTML = "";
+  var cols = [];
+  for (var w = 1; w <= 13; w++) { cols.push({ wk: w, label: "W" + w }); if (w === s.breakAfter) cols.push({ brk: true, label: "Break" }); }
+  cols.push({ wk: 14, label: "Exams", ex: true });
+  var cw = currentWeek(s);
+  tt.appendChild(el("div", "c h rl"));
+  cols.forEach(function (c) {
+    var h = txt("div", "c h" + (c.wk && c.wk === cw ? " now" : ""), c.brk ? "–" : c.label);
+    if (c.brk) h.title = "Mid-session recess";
+    tt.appendChild(h);
+  });
+  unitsIn(s.id).forEach(function (u) {
+    tt.appendChild(txt("div", "c rl", u.id));
+    var done = unitDone(u);
+    cols.forEach(function (c) {
+      var cell = el("div", "c" + (c.brk ? " brk" : "") + (c.ex ? " ex" : "") + (c.wk && c.wk === cw ? " nowcol" : ""));
+      if (c.wk) {
+        u.tasks.forEach(function (t, i) {
+          if (weekOf(t) !== c.wk) return;
+          var m = state.marks[key(u, i)], isReal = m.got != null, v = isReal ? m.got : m.plan, g = grade(v / t.w * 100);
+          var size = Math.round(14 + t.w / 4);
+          var mk = el("span", "mk g-" + g + (isReal ? "" : done ? " blank" : " plan"));
+          mk.style.width = size + "px"; mk.style.height = size + "px";
+          mk.textContent = t.w;
+          var due = dueOf(s, t);
+          mk.title = u.id + " · " + t.name + " · " + t.w + "% · " + (due.exam ? "exam period from " : "") + fmt(due.d) + (isReal ? " · real " + show(v) + "/" + t.w : "");
+          cell.appendChild(mk);
+        });
+      }
+      tt.appendChild(cell);
+    });
+  });
+}
+
+function renderCharts() {
+  // WAM journey
+  var W = 520, H = 290, L = 36, R = 34, T = 22, B = 30;
+  var x = function (i) { return L + i * ((W - L - R) / (SESSIONS.length - 1)); };
+  var y = function (v) { return T + (100 - clamp(v, 50, 100)) / 50 * (H - T - B); };
+  var parts = [];
+  [50, 60, 70, 80, 90, 100].forEach(function (v) {
+    parts.push('<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--line)" stroke-width="1"/>');
+    parts.push('<text x="' + (L - 8) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + '</text>');
+  });
+  parts.push('<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(state.target) + '" y2="' + y(state.target) + '" stroke="var(--hd)" stroke-width="1.5" stroke-dasharray="4 4"/>');
+  var seen = [], pts = [];
+  SESSIONS.forEach(function (s, i) {
+    var us = unitsIn(s.id);
+    seen = seen.concat(us);
+    pts.push({ i: i, s: s, sw: us.length ? wam(us) : null, cw: seen.length ? wam(seen) : null, done: us.length && us.every(unitDone) });
+  });
+  for (var k = 1; k < pts.length; k++) {
+    var a = pts[k - 1], b = pts[k];
+    if (a.cw == null || b.cw == null) continue;
+    parts.push('<line x1="' + x(a.i) + '" y1="' + y(a.cw) + '" x2="' + x(b.i) + '" y2="' + y(b.cw) + '" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"' + (b.done ? "" : ' stroke-dasharray="6 5"') + '/>');
+  }
+  pts.forEach(function (p) {
+    parts.push('<text x="' + x(p.i) + '" y="' + (H - 8) + '" text-anchor="middle">' + p.s.name.replace("Session ", "S").replace(",", "") + '</text>');
+    if (p.cw != null) parts.push('<circle cx="' + x(p.i) + '" cy="' + y(p.cw) + '" r="4" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>');
+    if (p.sw != null) {
+      var g = grade(p.sw);
+      parts.push('<circle cx="' + x(p.i) + '" cy="' + y(p.sw) + '" r="6" fill="var(--' + g.toLowerCase() + ')"/>');
+      parts.push('<text class="val" x="' + x(p.i) + '" y="' + (y(p.sw) - 11) + '" text-anchor="middle">' + p.sw.toFixed(1) + '</text>');
+    }
+  });
+  document.getElementById("journeyChart").innerHTML = parts.join("");
+
+  // Hardness ranking
+  var hl = document.getElementById("hardList");
+  hl.innerHTML = "";
+  UNITS.map(function (u) { return { u: u, h: hardness(u) }; })
+    .sort(function (a, b) { return b.h.score - a.h.score; })
+    .forEach(function (r) {
+      var row = el("div", "hrow lv" + r.h.lv);
+      row.title = r.u.name + " · " + r.h.why;
+      row.appendChild(txt("b", null, r.u.id));
+      var tr = el("span", "ht", "<i></i>"); tr.firstChild.style.width = r.h.score + "%";
+      row.appendChild(tr);
+      row.appendChild(txt("small", null, r.h.label));
+      hl.appendChild(row);
+    });
 }
 
 function renderRight() {
@@ -1066,14 +1304,22 @@ function renderRight() {
   });
   var ul = document.getElementById("upcoming");
   ul.innerHTML = "";
-  up.slice(0, 5).forEach(function (x) {
-    var r = el("div", "up");
-    r.appendChild(el("span", "ticon", icon(x.t.t)));
+  up.forEach(function (x) { x.due = dueOf(x.s, x.t); });
+  up.sort(function (a, b) { return a.due.d - b.due.d; });
+  up.slice(0, 6).forEach(function (x) {
+    var r = el("div", "dl");
+    var dd = x.due.d, n = daysTo(dd);
+    r.appendChild(el("div", "date", "<b>" + dd.getDate() + "</b><span>" + MON[dd.getMonth()] + "</span>"));
     var mid = el("div");
-    mid.appendChild(txt("b", null, x.u.id + " · " + x.t.name));
-    mid.appendChild(txt("small", null, x.s.name.replace("Session ", "S").replace(",", "") + " · " + x.t.when));
+    mid.appendChild(txt("b", "t", x.u.id + " · " + x.t.name));
+    mid.appendChild(txt("small", null, x.t.w + "% · " + (x.due.exam ? "exam period from " + fmt(dd) : x.due.exact ? fmt(dd) : "~" + fmt(dd)) + (x.s.est ? " (est.)" : "")));
     r.appendChild(mid);
-    r.appendChild(txt("span", "w", x.t.w + "%"));
+    var cd;
+    if (x.due.exam && n <= 0 && n > -21) cd = txt("span", "cd soon", "Exam period");
+    else if (n < 0) cd = txt("span", "cd late", "Add mark");
+    else if (n === 0) cd = txt("span", "cd soon", "Today");
+    else cd = txt("span", "cd" + (n <= 14 ? " soon" : ""), n < 60 ? n + " days" : Math.round(n / 7) + " wks");
+    r.appendChild(cd);
     ul.appendChild(r);
   });
   if (!up.length) ul.appendChild(txt("small", null, "Nothing left. Every task has a real mark."));
