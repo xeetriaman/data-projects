@@ -206,6 +206,67 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 
 .foot { margin-top: 40px; font-size: 12px; color: var(--muted); max-width: 70ch; }
 
+
+/* Wide layout with side rails */
+.layout { display: block; }
+.rail { display: none; }
+@media (min-width: 1240px) {
+  .wrap { max-width: 1480px; }
+  .layout { display: grid; grid-template-columns: 236px minmax(0, 1fr) 280px; gap: 24px; align-items: start; }
+  .rail { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; scrollbar-width: thin; }
+  .stepper { display: none; }
+}
+@media (max-width: 1239px) {
+  .rail.right { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 30px; }
+}
+.rcard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; }
+.rcard h3 { font-size: 14px; display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.rcard h3 svg { width: 16px; height: 16px; color: var(--muted); }
+.crest { padding: 18px 16px; background: var(--ink); color: #fff; border-color: var(--ink); position: relative; overflow: hidden; }
+.crest svg.mark { width: 54px; height: 62px; }
+.crest b { display: block; font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-top: 10px; line-height: 1.2; }
+.crest span { font-size: 12px; opacity: .7; }
+.crest .grid-bg { position: absolute; right: -14px; top: -14px; width: 104px; height: 104px; opacity: .12; }
+.navlist { display: flex; flex-direction: column; gap: 2px; }
+.navlist button { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; background: none; border: 0; border-radius: 10px; padding: 8px; }
+.navlist button:hover { background: var(--soft); }
+.navlist .nl { flex: 1; min-width: 0; }
+.navlist .nl b { display: block; font-size: 13px; font-weight: 600; }
+.navlist .nl small { color: var(--muted); font-size: 11.5px; }
+.navlist .nv { font-family: var(--font-display); font-weight: 600; font-size: 15px; }
+.legend { display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; font-size: 12.5px; color: var(--ink-2); align-items: center; }
+.motto { font-family: var(--font-display); font-size: 17px; font-weight: 500; line-height: 1.35; color: var(--ink); margin: 0; }
+.motto + small { display: block; color: var(--muted); font-size: 12px; margin-top: 8px; }
+.uplist { display: flex; flex-direction: column; gap: 10px; }
+.up { display: grid; grid-template-columns: 34px 1fr auto; gap: 10px; align-items: center; }
+.up .ticon { width: 34px; height: 34px; }
+.up b { display: block; font-size: 12.5px; font-weight: 600; line-height: 1.3; }
+.up small { color: var(--muted); font-size: 11.5px; }
+.up .w { font-family: var(--font-display); font-weight: 600; font-size: 14px; color: var(--ink-2); }
+.donutwrap { display: flex; align-items: center; gap: 14px; }
+.donutwrap svg { width: 96px; height: 96px; flex: none; transform: rotate(-90deg); }
+.donut-legend { display: flex; flex-direction: column; gap: 5px; font-size: 12.5px; }
+.donut-legend span { display: flex; align-items: center; gap: 8px; }
+.donut-legend i { width: 9px; height: 9px; border-radius: 3px; background: var(--g); }
+.bars { display: flex; flex-direction: column; gap: 10px; }
+.bar-row { display: grid; grid-template-columns: 54px 1fr 44px; gap: 8px; align-items: center; font-size: 12px; color: var(--ink-2); }
+.bar-row .track { height: 8px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+.bar-row .track i { display: block; height: 100%; border-radius: 999px; background: var(--ink); }
+.bar-row .hrs { text-align: right; font-weight: 600; }
+.rnote { font-size: 11.5px; color: var(--muted); margin-top: 10px; }
+
+/* Assessment rows on each tile */
+.trows { display: flex; flex-direction: column; gap: 10px; }
+.tr { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: start; }
+.tr .ticon { width: 30px; height: 30px; border-radius: 9px; }
+.tr .ticon svg { width: 15px; height: 15px; }
+.tr .tn { font-size: 13px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.tr .tm { font-size: 11.5px; color: var(--muted); margin-top: 1px; }
+.tr .ta { font-size: 12px; color: var(--ink-2); margin-top: 3px; line-height: 1.45; }
+.tr .tv { font-family: var(--font-display); font-size: 13px; font-weight: 600; padding: 2px 8px; border-radius: 8px; background: var(--soft); color: var(--ink-2); white-space: nowrap; }
+.tr .tv.real { background: var(--gb); color: var(--g); }
+.task .tabout { font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
+
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; }
   .side { grid-template-rows: auto; }
@@ -233,6 +294,21 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
     <span class="save" id="saveStatus"><svg class="ic" data-ic="cloud"></svg><span>Saving on this device</span></span>
   </header>
 
+  <div class="layout">
+  <aside class="rail left" aria-label="Course overview">
+    <div class="rcard crest"><svg class="grid-bg" viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="50" cy="10" r="3"/><circle cx="70" cy="10" r="3"/><circle cx="90" cy="10" r="3"/><circle cx="10" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="50" cy="30" r="3"/><circle cx="70" cy="30" r="3"/><circle cx="90" cy="30" r="3"/><circle cx="10" cy="50" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="50" cy="50" r="3"/><circle cx="70" cy="50" r="3"/><circle cx="90" cy="50" r="3"/><circle cx="10" cy="70" r="3"/><circle cx="30" cy="70" r="3"/><circle cx="50" cy="70" r="3"/><circle cx="70" cy="70" r="3"/><circle cx="90" cy="70" r="3"/><circle cx="10" cy="90" r="3"/><circle cx="30" cy="90" r="3"/><circle cx="50" cy="90" r="3"/><circle cx="70" cy="90" r="3"/><circle cx="90" cy="90" r="3"/></g></svg><svg class="mark" viewBox="0 0 54 62" aria-hidden="true"><path d="M27 2l23 8v20c0 15-10 26-23 30C14 56 4 45 4 30V10z" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M15 40V22l6 9 6-9v18M33 22h4.5a7 7 0 010 14H33z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><circle cx="27" cy="48" r="2" fill="#fff"/></svg><b>Master of Data Science</b><span>Aman Chhetri · 2026 to 2028</span></div>
+    <div class="rcard"><h3><svg class="ic" data-ic="calendar"></svg>Sessions</h3><div class="navlist" id="railNav"></div></div>
+    <div class="rcard"><h3><svg class="ic" data-ic="medal"></svg>Grade bands</h3>
+      <div class="legend">
+        <span class="pill g-HD">HD</span><span>85 to 100 · High Distinction</span>
+        <span class="pill g-D">D</span><span>75 to 84 · Distinction</span>
+        <span class="pill g-Cr">Cr</span><span>65 to 74 · Credit</span>
+        <span class="pill g-P">P</span><span>50 to 64 · Pass</span>
+        <span class="pill g-F">F</span><span>Below 50 · Fail</span>
+      </div></div>
+    <div class="rcard"><p class="motto">One assessment at a time. Every real mark you log makes the plan sharper.</p><small>Funded PhD goal · start 2031</small></div>
+  </aside>
+  <main>
   <section class="hero" aria-live="polite">
     <div class="panel score">
       <div>
@@ -291,6 +367,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
   <div id="timeline"></div>
 
   <p class="foot">Assessment names, weights and timing come from Macquarie's 2026 unit guides and can change each session, so check each guide when you enrol. Striped segments are planned marks; solid segments are real marks. WAM is the credit-point weighted average of unit marks: HD 85+, D 75 to 84, Cr 65 to 74, P 50 to 64, F below 50.</p>
+  </main>
+  <aside class="rail right" aria-label="Coming up and workload">
+    <div class="rcard"><h3><svg class="ic" data-ic="flag"></svg>Coming up</h3><div class="uplist" id="upcoming"></div></div>
+    <div class="rcard"><h3><svg class="ic" data-ic="chart"></svg>Projected grade mix</h3>
+      <div class="donutwrap"><svg viewBox="0 0 42 42" id="donut" aria-hidden="true"></svg><div class="donut-legend" id="donutLegend"></div></div></div>
+    <div class="rcard"><h3><svg class="ic" data-ic="clock"></svg>Assessment hours by session</h3><div class="bars" id="workload"></div>
+      <div class="rnote">Indicative time on task from the 2026 unit guides, for assessments only.</div></div>
+  </aside>
+  </div>
 </div>
 
 <script>
@@ -360,82 +445,82 @@ var UNITS = [
   // ---- Session 2, 2026 (now) ----
   { id: "COMP6350", name: "Database Systems", cp: 10, zone: "Foundation", home: "S2-2026", offered: ["S2"], final: 61,
     tasks: [
-      { name: "Database modelling, design and implementation", w: 30, t: "data", when: "11 Sep 2026" },
-      { name: "Database enhancement project", w: 40, t: "project", when: "23 Oct 2026", tags: ["Group"] },
-      { name: "Final exam", w: 30, t: "exam", when: "Exam period" }] },
+      { about: "Design and build a database for a given domain, then use SQL to work with its data.", hrs: 30, ai: "Open", name: "Database modelling, design and implementation", w: 30, t: "data", when: "11 Sep 2026" },
+      { about: "Improve an existing database's design and implementation, working individually and in a group.", hrs: 30, ai: "Open", name: "Database enhancement project", w: 40, t: "project", when: "23 Oct 2026", tags: ["Group"] },
+      { about: "Formal exam on database concepts, design and SQL programming.", hrs: 20, ai: "Observed", name: "Final exam", w: 30, t: "exam", when: "Exam period" }] },
   { id: "STAT6190", name: "Statistical Methods for Data Science", cp: 10, zone: "Foundation", home: "S2-2026", offered: ["S1", "S2"], final: 80,
     tasks: [
-      { name: "Problem set", w: 50, t: "sigma", when: "2 Sep 2026", tags: ["Observed"] },
-      { name: "Data analysis in a professional setting", w: 50, t: "report", when: "4 Nov 2026" }] },
+      { about: "Closed-book, paper-based class test in week 6 (2 hours), with one double-sided page of notes.", hrs: 15, ai: "Observed", name: "Problem set", w: 50, t: "sigma", when: "2 Sep 2026", tags: ["Observed"] },
+      { about: "Act as a statistical consultant: analyse a client dataset and write a reproducible PDF report in a 4-hour, open-book class in week 13.", hrs: 20, ai: "Observed", name: "Data analysis in a professional setting", w: 50, t: "report", when: "Week 13 in class", tags: ["Observed"] }] },
   { id: "COMP6010", name: "Foundations of Computer Programming", cp: 10, zone: "Foundation", home: "S2-2026", offered: ["S1", "S2"],
     tasks: [
-      { name: "Skills lab", w: 35, t: "code", when: "Week 8 + break", got: 25 },
-      { name: "Major assignment", w: 25, t: "code", when: "1 Nov 2026", got: 25 },
-      { name: "Module quiz", w: 40, t: "exam", when: "Week 13 / exam period", plan: 30 }] },
+      { about: "Invigilated coding test on the first half of the session. A second attempt is capped at 84%.", hrs: 25, ai: "Observed", name: "Skills lab", w: 35, t: "code", when: "Week 8 + break", got: 25 },
+      { about: "An individual programming assignment applying the session's content to a real-life problem.", hrs: 20, ai: "Open", name: "Major assignment", w: 25, t: "code", when: "1 Nov 2026", got: 25 },
+      { about: "Invigilated quiz covering the whole session. A second attempt in the exam period is capped at 84%.", hrs: 40, ai: "Observed", name: "Module quiz", w: 40, t: "exam", when: "Week 13 / exam period", plan: 30 }] },
   { id: "COMP6200", name: "Data Science", cp: 10, zone: "Foundation", home: "S2-2026", offered: ["S1", "S2"],
     tasks: [
-      { name: "Machine learning project", w: 25, t: "project", when: "4 Sep 2026", got: 23 },
-      { name: "Python project", w: 25, t: "code", when: "23 Oct 2026", got: 25 },
-      { name: "Final exam", w: 50, t: "exam", when: "Exam period", plan: 37 }] },
+      { about: "Write Python code that applies machine learning models to datasets, then report what you found.", hrs: 20, ai: "Open", name: "Machine learning project", w: 25, t: "project", when: "4 Sep 2026", got: 23 },
+      { about: "Process data in Python, apply statistical and data science techniques to real or simulated data, and present the results.", hrs: 20, ai: "Open", name: "Python project", w: 25, t: "code", when: "23 Oct 2026", got: 25 },
+      { about: "Supervised exam on the data analysis and machine learning methods from the session.", hrs: 30, ai: "Observed", name: "Final exam", w: 50, t: "exam", when: "Exam period", plan: 37 }] },
 
   // ---- Foundation units still to take ----
   { id: "COMP6210", name: "Big Data", cp: 10, zone: "Foundation", home: "S1-2027", offered: ["S1", "S2"], pre: "COMP6200",
     tasks: [
-      { name: "Assignment 1", w: 30, t: "data", when: "Mid session" },
-      { name: "Assignment 2", w: 40, t: "project", when: "Late session", tags: ["Group"] },
-      { name: "Final exam", w: 30, t: "exam", when: "Exam period" }] },
+      { about: "Implement and discuss scalable algorithms, such as Hadoop and MapReduce, for processing big data.", hrs: 30, ai: "Open", name: "Assignment 1", w: 30, t: "data", when: "Mid session" },
+      { about: "In a group, write a project plan, implement big data processing algorithms and present the results.", hrs: 30, ai: "Open", name: "Assignment 2", w: 40, t: "project", when: "Late session", tags: ["Group"] },
+      { about: "Exam on the theory of big data algorithms and implementation issues.", hrs: 15, ai: "Observed", name: "Final exam", w: 30, t: "exam", when: "Exam period" }] },
   { id: "COMP6770", name: "Management of IT Systems and Projects", cp: 10, zone: "Foundation", home: "S1-2027", offered: ["S1"],
     tasks: [
-      { name: "Project modelling task", w: 25, t: "sigma", when: "Week 6" },
-      { name: "Project management scenario", w: 25, t: "project", when: "Week 12", tags: ["Group"] },
-      { name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
+      { about: "Plan an IT project from a briefing: Gantt chart, network diagram, resources, scope, success metrics, controls and risks.", hrs: 25, ai: "Open", name: "Project modelling task", w: 25, t: "sigma", when: "Week 6" },
+      { about: "Review a failed system, then write a new project plan with a more flexible process model and a risk plan. Individual and group parts.", hrs: 25, ai: "Open", name: "Project management scenario", w: 25, t: "project", when: "Week 12", tags: ["Group"] },
+      { about: "Final exam covering the whole session.", hrs: 40, ai: "Observed", name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
   { id: "STAT6191", name: "Statistical Inference for Data Science", cp: 10, zone: "Foundation", home: "S1-2027", offered: ["S1", "S2"], pre: "STAT6190",
     tasks: [
-      { name: "Statistical inference problem set", w: 20, t: "sigma", when: "Week 5" },
-      { name: "Project report", w: 30, t: "report", when: "Week 12", tags: ["Group"] },
-      { name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
+      { about: "Take-home problem set applying the lecture concepts and SGTA skills.", hrs: 15, ai: "Open", name: "Statistical inference problem set", w: 20, t: "sigma", when: "Week 5" },
+      { about: "Group report applying statistical techniques to a simulation-based inference problem.", hrs: 30, ai: "Open", name: "Project report", w: 30, t: "report", when: "Week 12", tags: ["Group"] },
+      { about: "Invigilated individual exam in the exam period.", hrs: 25, ai: "Observed", name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
   { id: "COMP6179", name: "Statistical Technologies for Data Science", cp: 10, zone: "Foundation", home: "S2-2027", offered: ["S1", "S2"],
     tasks: [
-      { name: "Problem set 1", w: 20, t: "sigma", when: "Week 5" },
-      { name: "Problem set 2", w: 30, t: "sigma", when: "Week 10" },
-      { name: "Individual project", w: 50, t: "project", when: "Week 13" }] },
+      { about: "Use R to process and explore datasets through the key steps of a data science workflow.", hrs: 10, ai: "Open", name: "Problem set 1", w: 20, t: "sigma", when: "Week 5" },
+      { about: "Analyse problems using data visualisation, R package creation and a reproducible workflow.", hrs: 10, ai: "Open", name: "Problem set 2", w: 30, t: "sigma", when: "Week 10" },
+      { about: "Tackle several statistical challenges with software and data tools, combining analysis, code and communication.", hrs: 40, ai: "Open", name: "Individual project", w: 50, t: "project", when: "Week 13" }] },
 
   // ---- Core units ----
   { id: "COMP8770", name: "Information Systems Project and Risk Management", cp: 10, zone: "Core", home: "S1-2027", offered: ["S1"],
     tasks: [
-      { name: "Modelling task", w: 20, t: "sigma", when: "Week 5" },
-      { name: "Client approval project", w: 40, t: "present", when: "Week 12", tags: ["Group"] },
-      { name: "Final exam", w: 40, t: "exam", when: "Exam period" }] },
+      { about: "Plan a project's resources, critical path, schedule and costs, then identify risks and how to reduce them.", hrs: 20, ai: "Open", name: "Modelling task", w: 20, t: "sigma", when: "Week 5" },
+      { about: "In a group, present to win a client's approval for an IS project, with recommendations and a risk management plan.", hrs: 40, ai: "Open", name: "Client approval project", w: 40, t: "present", when: "Week 12", tags: ["Group"] },
+      { about: "Formal individual exam covering all the unit's material.", hrs: 40, ai: "Observed", name: "Final exam", w: 40, t: "exam", when: "Exam period" }] },
   { id: "COMP8210", name: "Big Data Technologies", cp: 10, zone: "Core", home: "S2-2027", offered: ["S2"], pre: "COMP6210",
     tasks: [
-      { name: "Organising and processing big data", w: 35, t: "data", when: "Week 6", tags: ["Observed"] },
-      { name: "Problem analysis report", w: 40, t: "report", when: "Week 12" },
-      { name: "Big data analysis", w: 25, t: "data", when: "Week 13", tags: ["Observed"] }] },
+      { about: "Index, search and process high-dimensional data, with a focus on managing big data.", hrs: 30, ai: "Observed", name: "Organising and processing big data", w: 35, t: "data", when: "Week 6", tags: ["Observed"] },
+      { about: "A report analysing a major problem in big data technologies. It also serves as the final exam.", hrs: 25, ai: "Open", name: "Problem analysis report", w: 40, t: "report", when: "Week 12", tags: ["Replaces final exam"] },
+      { about: "Carry out an analysis of big data.", hrs: 20, ai: "Observed", name: "Big data analysis", w: 25, t: "data", when: "Week 13", tags: ["Observed"] }] },
   { id: "COMP8240", name: "Applications of Data Science", cp: 10, zone: "Core", home: "S2-2027", offered: ["S2"],
     tasks: [
-      { name: "Project proposal", w: 20, t: "report", when: "Week 5" },
-      { name: "Project update presentation", w: 40, t: "present", when: "Mid to late session" },
-      { name: "Final report", w: 40, t: "report", when: "Late session" }] },
+      { about: "Propose the existing work you'll reproduce, explain the data you'll use and outline your plan.", hrs: 20, ai: "Open", name: "Project proposal", w: 20, t: "report", when: "Week 5" },
+      { about: "A video presentation on your progress, including a detailed walkthrough of your code.", hrs: 40, ai: "Observed", name: "Project update presentation", w: 40, t: "present", when: "Mid to late session" },
+      { about: "Report on the finished project: goals, data, processing and results against the goals.", hrs: 33, ai: "Open", name: "Final report", w: 40, t: "report", when: "Late session" }] },
   { id: "COMP8107", name: "Statistical and Machine Learning Methods", cp: 10, zone: "Core", home: "S2-2027", offered: ["S1", "S2"], pre: "STAT6191",
     tasks: [
-      { name: "Assignment", w: 25, t: "code", when: "Week 6" },
-      { name: "Case study", w: 35, t: "report", when: "Week 11" },
-      { name: "Final exam", w: 40, t: "exam", when: "Exam period" }] },
+      { about: "Individual report applying statistical learning methods (regression, resampling, regularisation) to a real-world problem.", hrs: 20, ai: "Open", name: "Assignment", w: 25, t: "code", when: "Week 6" },
+      { about: "Analyse a real dataset and turn the findings into a magazine-style article for a non-technical audience.", hrs: 20, ai: "Open", name: "Case study", w: 35, t: "report", when: "Week 11" },
+      { about: "Timed individual exam in the formal exam period.", hrs: 2, ai: "Observed", name: "Final exam", w: 40, t: "exam", when: "Exam period" }] },
   { id: "COMP8230", name: "Mining Unstructured Data", cp: 10, zone: "Core", home: "S1-2028", offered: ["S1"],
     tasks: [
-      { name: "Problem analysis", w: 30, t: "report", when: "Week 5" },
-      { name: "Report on data mining in industry", w: 30, t: "report", when: "Week 10" },
-      { name: "Literature review", w: 40, t: "book", when: "Week 13" }] },
+      { about: "Analyse sample problem topics, pick suitable data mining techniques and write a report with an exploration plan.", hrs: 23, ai: "Open", name: "Problem analysis", w: 30, t: "report", when: "Week 5" },
+      { about: "A report and presentation on one aspect of unstructured data mining used in industry.", hrs: 23, ai: "Open", name: "Report on data mining in industry", w: 30, t: "report", when: "Week 10" },
+      { about: "Review existing work on one of the unit's topics in a written literature review.", hrs: 29, ai: "Open", name: "Literature review", w: 40, t: "book", when: "Week 13" }] },
   { id: "STAT8150", name: "Bayesian Data Analysis", cp: 10, zone: "Core", home: "S1-2028", offered: ["S1"], pre: "STAT6191",
     tasks: [
-      { name: "Written report", w: 20, t: "report", when: "Mid session" },
-      { name: "Media presentation", w: 30, t: "present", when: "Late session" },
-      { name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
+      { about: "Individual report interpreting a Bayesian analysis: priors, posterior inference and interpretation.", hrs: 23, ai: "Open", name: "Written report", w: 20, t: "report", when: "Mid session" },
+      { about: "Apply Bayesian methods to real data and deliver a pre-recorded presentation of your findings.", hrs: 30, ai: "Observed", name: "Media presentation", w: 30, t: "present", when: "Late session" },
+      { about: "Formal exam covering the unit's learning outcomes.", hrs: 2, ai: "Observed", name: "Final exam", w: 50, t: "exam", when: "Exam period" }] },
   { id: "COMP8851", name: "Major Project", cp: 20, zone: "Core", home: "S1-2028", offered: ["S1", "S2"], pre: "40 cp of 8000-level COMP units",
     tasks: [
-      { name: "Project initiation", w: 20, t: "report", when: "Early session" },
-      { name: "Project planning and development", w: 30, t: "project", when: "Mid session" },
-      { name: "Project completion", w: 50, t: "present", when: "End of session" }] }
+      { about: "Present your proposed project: its purpose, goals and first plan (week 4).", hrs: 10, ai: "Open", name: "Project initiation", w: 20, t: "report", when: "Week 4" },
+      { about: "Present the detailed planning and development so far (week 8).", hrs: 10, ai: "Open", name: "Project planning and development", w: 30, t: "project", when: "Week 8" },
+      { about: "Present the full project and outcome, with individual written reports, in-person presentations and demos where relevant (week 13).", hrs: 25, ai: "Open", name: "Project completion", w: 50, t: "present", when: "Week 13" }] }
 ];
 
 // ===== State =====
@@ -593,6 +678,23 @@ function toast(msg) { var t = document.getElementById("toast"); t.textContent = 
 var openCards = {};
 
 function buildStepper() {
+  var rn = document.getElementById("railNav");
+  rn.innerHTML = "";
+  SESSIONS.forEach(function (s) {
+    var b = el("button"); b.type = "button";
+    s.railDot = el("span", "dot");
+    var l = el("span", "nl");
+    l.appendChild(txt("b", null, s.name));
+    s.railInfo = txt("small", null, "");
+    l.appendChild(s.railInfo);
+    s.railVal = el("span", "nv");
+    b.appendChild(s.railDot); b.appendChild(l); b.appendChild(s.railVal);
+    b.addEventListener("click", function () {
+      var t = document.getElementById("sess-" + s.id);
+      if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    rn.appendChild(b);
+  });
   var nav = document.getElementById("stepper");
   nav.innerHTML = "";
   SESSIONS.forEach(function (s) {
@@ -669,13 +771,21 @@ function buildUnit(u) {
   });
   head.appendChild(bar);
 
-  var chips = el("div", "chips");
-  u.chips = u.tasks.map(function (t) {
-    var c = el("span", "tchip", icon(t.t) + "<span></span>");
-    chips.appendChild(c);
-    return c;
+  var rows = el("div", "trows");
+  u.rows = u.tasks.map(function (t) {
+    var r = el("div", "tr");
+    r.appendChild(el("span", "ticon", icon(t.t)));
+    var mid = el("div");
+    mid.appendChild(txt("div", "tn", t.name));
+    mid.appendChild(txt("div", "tm", t.w + "% · " + t.when + (t.hrs ? " · ~" + t.hrs + " h" : "") + (t.ai ? " · AI " + t.ai.toLowerCase() : "") + (t.tags && t.tags.indexOf("Group") > -1 ? " · Group" : "")));
+    if (t.about) mid.appendChild(txt("div", "ta", t.about));
+    r.appendChild(mid);
+    var v = el("span", "tv");
+    r.appendChild(v);
+    rows.appendChild(r);
+    return v;
   });
-  head.appendChild(chips);
+  head.appendChild(rows);
 
   var foot = el("div", "ufoot");
   u.footEl = txt("span", null, "");
@@ -763,10 +873,13 @@ function buildTask(u, t, i) {
   function m(ic, text) { var s = el("span", null, icon(ic)); s.appendChild(document.createTextNode(text)); meta.appendChild(s); }
   m("target", t.w + "%");
   m("calendar", t.when);
-  (t.tags || []).forEach(function (x) { m(x === "Group" ? "users" : "eye", x); });
+  if (t.hrs) m("clock", "~" + t.hrs + " h");
+  if (t.ai) m("eye", "AI " + t.ai.toLowerCase());
+  (t.tags || []).forEach(function (x) { if (x !== "Observed") m(x === "Group" ? "users" : "alert", x); });
   main.appendChild(meta);
   top.appendChild(main);
   box.appendChild(top);
+  if (t.about) box.appendChild(txt("div", "tabout", t.about));
 
   var val = el("div", "tval");
   box.appendChild(val);
@@ -827,12 +940,11 @@ function update() {
       var mk = state.marks[key(u, i)], isReal = mk.got != null, v = isReal ? mk.got : mk.plan, pct = v / t.w * 100, tg = grade(pct);
       if (isReal) realN++;
       var blank = done && !isReal;   // finished unit, task mark not entered
-      // segment + chip on the tile
       u.segs[i].className = "s g-" + tg + (isReal ? "" : " plan");
       u.segs[i].firstChild.style.width = (blank ? 0 : pct) + "%";
-      u.chips[i].className = "tchip g-" + (blank ? "none" : tg) + (isReal ? " real" : "");
-      u.chips[i].lastChild.textContent = (blank ? "–" : show(v)) + "/" + t.w;
-      u.chips[i].title = t.name + (isReal ? " (real)" : " (planned)");
+      u.rows[i].className = "tv g-" + (blank ? "none" : tg) + (isReal ? " real" : "");
+      u.rows[i].textContent = (blank ? "–" : show(v)) + " / " + t.w;
+      u.rows[i].title = isReal ? "Real mark" : blank ? "Not entered" : "Planned mark";
       // expanded task
       t.ui.box.className = "task g-" + tg + (isReal ? " done" : "");
       t.ui.val.innerHTML = "<b>" + show(v) + " <small>/ " + t.w + " · " + Math.round(pct) + "%</small></b>" +
@@ -867,6 +979,10 @@ function update() {
     s.stepDot.className = "dot g-" + g;
     s.stepDot.innerHTML = icon(allDone ? "check" : started ? "clock" : "dot");
     s.stepInfo.textContent = units.length + " units · " + (units.length ? w.toFixed(1) + " " + g : "empty");
+    s.railDot.className = "dot g-" + g; s.railDot.innerHTML = s.stepDot.innerHTML;
+    s.railInfo.textContent = s.when.split(" · ")[0];
+    s.railVal.textContent = units.length ? w.toFixed(1) : "–";
+    s.railVal.style.color = units.length ? "var(--" + g.toLowerCase() + ")" : "var(--muted)";
     var warns = [];
     if (cp > 40) warns.push(cp + " credit points is above the standard 40 cp full-time load.");
     units.forEach(function (u) { if (u.offered.indexOf(s.term) === -1) warns.push(u.id + " ran only in " + u.offered.join(" & ") + " in 2026."); });
@@ -936,6 +1052,62 @@ function update() {
 
   document.querySelectorAll("[data-target]").forEach(function (b) {
     b.setAttribute("aria-pressed", String(Number(b.dataset.target) === target));
+  });
+  renderRight();
+}
+
+function renderRight() {
+  var up = [];
+  SESSIONS.forEach(function (s) {
+    unitsIn(s.id).forEach(function (u) {
+      if (unitDone(u)) return;
+      u.tasks.forEach(function (t, i) { if (state.marks[key(u, i)].got == null) up.push({ s: s, u: u, t: t }); });
+    });
+  });
+  var ul = document.getElementById("upcoming");
+  ul.innerHTML = "";
+  up.slice(0, 5).forEach(function (x) {
+    var r = el("div", "up");
+    r.appendChild(el("span", "ticon", icon(x.t.t)));
+    var mid = el("div");
+    mid.appendChild(txt("b", null, x.u.id + " · " + x.t.name));
+    mid.appendChild(txt("small", null, x.s.name.replace("Session ", "S").replace(",", "") + " · " + x.t.when));
+    r.appendChild(mid);
+    r.appendChild(txt("span", "w", x.t.w + "%"));
+    ul.appendChild(r);
+  });
+  if (!up.length) ul.appendChild(txt("small", null, "Nothing left. Every task has a real mark."));
+
+  var order = ["HD", "D", "Cr", "P", "F"], counts = { HD: 0, D: 0, Cr: 0, P: 0, F: 0 };
+  UNITS.forEach(function (u) { counts[grade(unitMark(u))]++; });
+  var svg = document.getElementById("donut"), C = 2 * Math.PI * 15.9, off = 0, html = '<circle cx="21" cy="21" r="15.9" fill="none" stroke="var(--soft)" stroke-width="6"/>';
+  order.forEach(function (g) {
+    if (!counts[g]) return;
+    var len = counts[g] / UNITS.length * C;
+    html += '<circle cx="21" cy="21" r="15.9" fill="none" stroke="var(--' + g.toLowerCase() + ')" stroke-width="6" stroke-dasharray="' + (len - .6).toFixed(2) + ' ' + (C - len + .6).toFixed(2) + '" stroke-dashoffset="' + (-off).toFixed(2) + '"/>';
+    off += len;
+  });
+  svg.innerHTML = html;
+  var lg = document.getElementById("donutLegend");
+  lg.innerHTML = "";
+  order.forEach(function (g) {
+    if (!counts[g]) return;
+    var r = el("span", "g-" + g, "<i></i>");
+    r.appendChild(document.createTextNode(g + " · " + counts[g] + (counts[g] === 1 ? " unit" : " units")));
+    lg.appendChild(r);
+  });
+
+  var wl = document.getElementById("workload"), hrs = SESSIONS.map(function (s) {
+    var h = 0; unitsIn(s.id).forEach(function (u) { u.tasks.forEach(function (t) { h += t.hrs || 0; }); }); return h;
+  }), max = Math.max.apply(null, hrs.concat([1]));
+  wl.innerHTML = "";
+  SESSIONS.forEach(function (s, i) {
+    var r = el("div", "bar-row");
+    r.appendChild(txt("span", null, s.name.replace("Session ", "S").replace(",", "")));
+    var tr = el("span", "track", "<i></i>"); tr.firstChild.style.width = (hrs[i] / max * 100) + "%";
+    r.appendChild(tr);
+    r.appendChild(txt("span", "hrs", hrs[i] + " h"));
+    wl.appendChild(r);
   });
 }
 
